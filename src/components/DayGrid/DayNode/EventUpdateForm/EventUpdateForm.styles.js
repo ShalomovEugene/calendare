@@ -60,7 +60,7 @@ export const EventTitle = styled.div(() => {
     input {
       border-bottom: 1px solid var(--black);
       padding: 3px 0;
-
+      background-color: transparent;
       &::placeholder {
         color: var(--dark-silver);
         font-size: 15px;

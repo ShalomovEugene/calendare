@@ -46,6 +46,7 @@ export const GlobalStyle = createGlobalStyle`
   input {
       border: none;
       font-family: ${roboto.style.fontFamily};
+      -webkit-appearance: none;
 
       &:focus {
         outline: none;
@@ -57,6 +58,7 @@ export const GlobalStyle = createGlobalStyle`
 
   textarea {
     font-family: ${roboto.style.fontFamily};
+     -webkit-appearance: none;
 
     &::placeholder {
        font-family: ${roboto.style.fontFamily};
@@ -66,6 +68,7 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
       border: none;
+      color: var(--black);
   }
   
 
@@ -79,12 +82,7 @@ export const GlobalStyle = createGlobalStyle`
     --alto: #E0E0E0;
     --green-light: #d1ffd1;
     --red-light: #ef6850;
-
-
     --philippine-gray: #8d8d8d;
-    --cod-gray: #1E1E1E;
-    --dove-gray: #616161;
-    --cursed-black: #131313;
   }
 `;
 

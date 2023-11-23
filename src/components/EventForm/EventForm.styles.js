@@ -1,9 +1,11 @@
 import styled, { css } from "styled-components";
 
-export const EventFormWrapp = styled.div(() => {
+export const EventFormWrapp = styled.div((props) => {
+  const { mediaQueries } = props.theme;
+
   return css`
     position: absolute;
-    left: 30px;
+    left: 0;
     bottom: -10px;
     transform: translateY(100%);
     max-width: 400px;
@@ -13,6 +15,10 @@ export const EventFormWrapp = styled.div(() => {
     padding: 25px 20px;
     border-radius: 4px;
     box-shadow: 0 0 7px #ccc;
+
+    ${mediaQueries.md} {
+      left: 30px;
+    }
 
     form {
       display: flex;
@@ -31,6 +37,10 @@ export const EventHeader = styled.header(() => {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+
+    button {
+      font-size: 19px;
+    }
 
     h4 {
       margin-bottom: 0;

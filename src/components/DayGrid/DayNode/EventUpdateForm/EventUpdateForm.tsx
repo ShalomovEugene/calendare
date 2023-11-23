@@ -65,6 +65,7 @@ const EventUpdateForm = ({
 
   const handleChangeDesc = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setDescriptionValue(event.target.value);
+    setIsDisabledForm(false);
   };
 
   const editEvent = () => {
@@ -107,6 +108,7 @@ const EventUpdateForm = ({
       } catch (ex) {
         console.log("cath clear datapicker");
       }
+      setIsDisabledForm(false);
     }
   };
 
