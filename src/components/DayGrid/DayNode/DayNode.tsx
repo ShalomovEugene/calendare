@@ -29,7 +29,7 @@ const DayNode: FC<IDayNode> = ({ date, className }): JSX.Element => {
       stateEvent.events ? (
         <>
           <h3>{date.getDate()}</h3>
-          <h4>{date.toLocaleDateString("en-US", { weekday: "long" })}</h4>
+          <h4>{date.toLocaleDateString("default", { weekday: "long" })}</h4>
           {eventList.map((eventItem) => (
             <DayEvent
               key={eventItem.id}
@@ -45,7 +45,7 @@ const DayNode: FC<IDayNode> = ({ date, className }): JSX.Element => {
       ) : (
         <>
           <h3>{date.getDate()}</h3>
-          <h4>{date.toLocaleDateString("en-US", { weekday: "long" })}</h4>
+          <h4>{date.toLocaleDateString("default", { weekday: "long" })}</h4>
         </>
       )}
     </DayNodeItem>

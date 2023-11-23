@@ -8,6 +8,10 @@ export const DayNodeItem = styled.div((props) => {
     border: 1px solid #ccc;
     padding: 10px 5px;
 
+    h4 {
+      text-transform: capitalize;
+    }
+
     ${mediaQueries.md} {
       width: 25%;
     }
